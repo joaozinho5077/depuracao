@@ -29,7 +29,16 @@ namespace depuracao
                 Console.WriteLine("não é possivel dividir {0} por zero", numero);
             else
                 Console.WriteLine("O quociente entre {0} e {1} é {2}", numero, denominador, Dividir(numero, denominador));
+            
+            int[] vetor = new int[3];
+            vetor[0] = int.Parse(Console.ReadLine());
+            vetor[1] = int.Parse(Console.ReadLine());
+            vetor[2] = int.Parse(Console.ReadLine());
+            for (int c = 0; c < vetor.Length; c++)
+                Console.Write("{0}", vetor[c]);
+            
             Console.Read();
+
         }
     }
 }
